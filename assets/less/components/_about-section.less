@@ -1,0 +1,129 @@
+.about-section {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+
+  > .section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .for-tablet-landscape-up({
+      flex-direction: row;
+      text-align: left;
+    });
+
+    &.find {
+      background-color: #01a185;
+
+      > .block.img {
+        background-image: url(../images/cliente-mobile.jpg);
+        border-bottom-color: #007c66;
+
+        .for-tablet-landscape-up({
+          background-image: url(../images/cliente-desktop.jpg);
+          border-bottom-style: none;
+          order: 2;
+        });
+      }
+    }
+    &.offer {
+      background-color: #1c437b;
+
+      > .block {
+        &.img {
+          background-image: url(../images/arquiteto-mobile.jpg);
+          border-bottom-color: #122647;
+
+          .for-tablet-landscape-up({
+            background-image: url(../images/arquiteto-desktop.jpg);
+            border-bottom-style: none;
+          });
+        }
+        &.container > .info {
+          .for-tablet-landscape-up({
+            margin-left: 0;
+          });
+        }
+      }
+    }
+    &.want {
+      background-color: #b72a3a;
+
+      > .block.img {
+        background-image: url(../images/empresa-mobile.jpg);
+        border-bottom-color: #9d2331;
+
+        .for-tablet-landscape-up({
+          background-image: url(../images/empresa-desktop.jpg);
+          border-bottom-style: none;
+          order: 2;
+        });
+      }
+    }
+    > .block {
+      .box-sizing;
+      display: flex;
+      flex-shrink: 0;
+      height: 400px;
+      padding: 1rem 0;
+
+      .for-tablet-landscape-up({
+        width: 50%;
+        flex: 1;
+        padding: 3rem 1.5rem;
+      });
+
+      &.img {
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        background-attachment: scroll;
+        background-size: cover;
+        border-bottom: 4px solid;
+      }
+      > .info {
+        width: 100%;
+        max-width: 530px;
+        height: 100%;
+        padding: 1rem;
+        margin: 0 auto;
+
+        .for-tablet-landscape-up({
+          margin-left: auto;
+          margin-right: 0;
+        });
+
+        > h2.title {
+          font-size: 1.375rem;
+          font-weight: bold;
+          margin-bottom: 1rem;
+          line-height: 120%;
+        }
+        p.text {
+          font-size: 0.875rem;
+          margin-bottom: 2rem;
+        }
+        > .btn {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          flex-shrink: 0;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 1.125em;
+          height: 4rem;
+          border-radius: 2rem;
+          padding: 0 2rem;
+          background-color: rgba(0, 0, 0, .2);
+          white-space: nowrap;
+
+          .for-tablet-portrait-up({
+            font-size: 0.875rem;
+          });
+        }
+      }
+    }
+  }
+}

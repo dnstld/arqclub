@@ -1,0 +1,66 @@
+.introduce-section {
+  width: 100%;
+  color: #000;
+
+  .for-tablet-landscape-up({
+    background: url(../images/instituicao-caridade.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+  });
+
+  > .content {
+    .box-sizing;
+    width: 100%;
+    height: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 7rem 1rem;
+
+    .for-tablet-landscape-up({
+      padding-top: 7.75rem;
+    });
+
+    > .logo {
+      display: block;
+      width: 150px;
+      margin: 0 auto 3.75rem;
+
+      .for-tablet-landscape-up({
+        margin-bottom: 5.75rem;
+      });
+    }
+    > .text {
+      font-size: 1.375rem;
+      margin-bottom: 5rem;
+      color: #41516c;
+      line-height: 120%;
+
+      .for-tablet-landscape-up({
+        margin-bottom: 6rem;
+        line-height: 150%;
+        font-size: 1.5rem;
+      });
+    }
+    > .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1.125rem;
+      height: 4rem;
+      border-radius: 2rem;
+      padding: 0 2rem;
+      background-color: #227fbc;
+      color: #fff;
+      white-space: nowrap;
+
+      .for-tablet-portrait-up({
+        font-size: 1rem;
+      });
+    }
+  }
+}

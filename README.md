@@ -1,6 +1,6 @@
-# SPA Starter LESS
+# ARQ.CLUB - Clube de Arquitetos
 
-Single page application initial structure with LESS 
+[Responsive Website (mobile-first)](http://arq.club/)<br />
 
 ## What I using?
 

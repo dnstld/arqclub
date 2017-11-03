@@ -1,0 +1,39 @@
+.social-section {
+  &:extend(.centered);
+  flex-direction: column;
+  flex-shrink: 0;
+  background-color: #1c437b;
+  padding: 2rem;
+
+  .for-tablet-landscape-up({
+    flex-direction: row;
+  });
+
+  > ul {
+    display: flex;
+
+    > li {
+      margin: 1rem;
+
+      > .social {
+        &:extend(.centered);
+        width: 3rem;
+        height: 3rem;
+        padding: 1rem;
+
+        &.facebook {
+          .icon(@icon-facebook, 2.7);
+        }
+        &.pinterest {
+          .icon(@icon-pinterest, 3);
+        }
+        &.twitter {
+          .icon(@icon-twitter, 3);
+        }
+        &.google {
+          .icon(@icon-google-plus, 3.5);
+        }
+      }
+    }
+  }
+}

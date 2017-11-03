@@ -1,0 +1,108 @@
+.main-header {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: 550px;
+
+  > .cover {
+    display: flex;
+    flex: 1;
+    background-image: url(../images/banner-topo.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    background-position-y: center;
+    background-attachment: scroll;
+    background-size: cover;
+
+    .for-tablet-landscape-up({
+      background-position-x: 90%;
+    });
+    .for-desktop-up({
+      background-position-x: 100%;
+    });
+
+    > .content {
+      .box-sizing;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      max-width: 1170px;
+      margin: 0 auto;
+      height: 100%;
+      background: linear-gradient(to right, rgba(255, 255, 255, .8) 0%,rgba(255, 255, 255, 0) 100%);
+      position: relative;
+      padding-top: 3rem;
+      padding-left: 1rem;
+
+      .for-tablet-portrait-up({
+        background: linear-gradient(to right, rgba(255, 255, 255, .6) 0%,rgba(255, 255, 255, 0) 100%);
+      });
+      .for-tablet-landscape-up({
+        background: none;
+      });
+
+      > img.logo {
+        display: block;
+        width: 130px;
+        margin-bottom: 1rem;
+
+        .for-tablet-landscape-up({
+        });
+      }
+
+      > h1.slogan {
+        font-family: "Montserrat";
+        font-weight: bold;
+        display: inline-flex;
+        max-width: 195px;
+        background-color: #227fbc;
+        padding: .8rem;
+        text-transform: uppercase;
+        text-align: left;
+        font-size: 0.875rem;
+
+        .for-tablet-landscape-up({
+          font-size: 1.125rem;
+          border-bottom: 4px solid #1b6da3;
+          max-width: 100%;
+          padding: 1rem;
+          position: absolute;
+          top: 50%;
+          left: 1rem;
+          transform: translateY(-50%);
+        });
+      }
+    }
+  }
+  > .titles {
+    .box-sizing;
+    display: flex;
+    flex-direction: column;
+    border-bottom: .5rem solid #227fbc;
+
+    .for-tablet-portrait-up({
+      flex-direction: row;
+    });
+
+    > .title {
+      .box-sizing;
+      font-family: "Montserrat";
+      font-weight: bold;
+      width: 100%;
+      padding: 1rem;
+      text-transform: uppercase;
+      font-size: 1.125rem;
+
+      &.club {
+        background-color: #227fbc;
+      }
+      &.architect {
+        background-color: #1c437b;
+      }
+      &.company {
+        background-color: #b72a3a;
+      }
+    }
+  }
+}

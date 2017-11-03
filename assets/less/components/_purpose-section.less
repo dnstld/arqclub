@@ -1,0 +1,41 @@
+.purpose-section {
+  background-color: #015288;
+  padding: 6.5rem 2rem 5rem;
+
+  .for-tablet-landscape-up({
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-attachment: scroll;
+    background-size: cover;
+    background-image: url(../images/nosso-proposito.png);
+  });
+  > h2.title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.875rem;
+    margin-bottom: 3.75rem;
+    line-height: 120%;
+
+    .for-tablet-landscape-up({
+      margin-bottom: 6.5rem;
+    });
+  }
+  > ul {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+
+    > li {
+      margin-bottom: 3rem;
+      font-size: 1.125rem;
+      line-height: 120%;
+
+      .for-tablet-landscape-up({
+        line-height: 150%;
+      });
+    }
+  }
+}

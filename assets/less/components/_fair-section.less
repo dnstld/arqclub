@@ -1,0 +1,69 @@
+.fair-section {
+  padding: 5rem 0;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-attachment: scroll;
+  background-size: cover;
+  background-image: url(../images/low-poly-white.jpg);
+
+  .for-tablet-landscape-up({
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  });
+
+  > .blocks {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .for-tablet-landscape-up({
+      flex-direction: row;
+    });
+
+    > .block {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      margin: 1rem;
+      padding: 4rem 2rem;
+      border-bottom: 4px solid rgba(0, 0, 0, .5);
+
+      > .title {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1rem;
+        height: 4rem;
+        border-radius: 2rem;
+        padding: 0 2rem;
+        background-color: rgba(0, 0, 0, .2);
+        white-space: nowrap;
+        margin-bottom: 2.5rem;
+
+        .for-tablet-portrait-up({
+          font-size: 1.125rem;
+        });
+      }
+      > .text {
+        font-size: 0.875rem;
+      }
+
+      &.client {
+        background-color: #01a185;
+      }
+      &.architect {
+        background-color: #1c437b;
+      }
+      &.company {
+        background-color: #b72a3a;
+      }
+    }
+  }
+}
